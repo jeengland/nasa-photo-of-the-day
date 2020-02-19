@@ -3,9 +3,9 @@ import React from 'react';
 const Description = (props) => {
     return (
         <section className='description'>
-            <p>Photo of the day for {props.date}</p> 
-            <p>{props.desc}</p>
-            <p>View HD version at {props.hd}</p>
+            <p className='date'>Photo of the day for {props.date}</p> 
+            <p className='description-text'>{props.desc}</p>
+            <p className='hd-link'>View HD version <a href={props.hd}>here</a></p>
         </section>
     )
 } 
