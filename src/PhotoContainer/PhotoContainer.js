@@ -11,7 +11,11 @@ const ContainerSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
     box-shadow: 2px 1px 2px black, -2px 1px 2px black;
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 `
 
 const TopSection = styled.div`

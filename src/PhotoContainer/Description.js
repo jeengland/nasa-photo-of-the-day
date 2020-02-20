@@ -9,11 +9,17 @@ const DescriptionSection = styled.section`
     .date {
         font-size: 1.2rem;
         margin: 1% 0 0;
+        @media (max-width: 500px ) {
+            margin: 3% 0 0
+        }
     }
     p {
         max-width: 80%;
         align-self: center;
         text-align: center;
+        @media( max-width: 500px ) {
+            max-width: 95%;
+        }
     }
 `
 
