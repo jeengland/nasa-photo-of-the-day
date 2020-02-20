@@ -8,10 +8,15 @@ import styled from 'styled-components';
 const ContainerSection = styled.section`
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 1px 2px black, -2px 1px 2px black;
 `
 
 const TopSection = styled.div`
     display: flex;
+    justify-contents: space-around;
 `
 
 const PhotoContainer = (props) => {
@@ -76,6 +81,7 @@ const PhotoContainer = (props) => {
     }
     return(
         <ContainerSection className='photo-container'>
+            <h1>NASA Photo of the Day</h1>
             <TopSection>
                 <Controls function={prevDate} direction='last' text='<'/>
                 <Photo src={data.url} title={data.title} />
