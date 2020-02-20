@@ -11,6 +11,9 @@ const DirectionalButton = styled.button`
         background-color: grey;
         color: white;
     }
+    @media ( max-width: 500px ) {
+        font-size 2rem;
+    }
 `
 
 const Controls = (props) => {

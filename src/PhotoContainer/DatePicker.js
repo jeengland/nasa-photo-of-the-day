@@ -4,6 +4,9 @@ import styled from 'styled-components';
 const PickerForm = styled.form`
   align-self: center;
   margin-top: 1%;
+  @media ( max-width: 500px) {
+    margin-top: 5%;
+  }
 `
 
 const DatePicker = (props) => {
