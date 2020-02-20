@@ -6,7 +6,7 @@ import Particles from 'react-particles-js';
 function App() {
   return (
     <React.Fragment>
-      <Particles className='particles' width='100%' height='150%' 
+      {/* <Particles className='particles' width='100%' height='150%' 
         params={{
           "particles": {
             "number": {
@@ -121,7 +121,7 @@ function App() {
           position: 'absolute',
           backgroundColor: 'black',
           zIndex: '-1',
-        }}/>
+        }}/> */}
       <PhotoContainer />
     </React.Fragment>
   );
