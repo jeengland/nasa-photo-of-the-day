@@ -3,6 +3,16 @@ import axios from 'axios';
 import Photo from './Photo'
 import Description from './Description';
 import Controls from './Controls';
+import styled from 'styled-components';
+
+const ContainerSection = styled.section`
+    max-width: 800px;
+    margin: 0 auto;
+`
+
+const TopSection = styled.div`
+    display: flex;
+`
 
 const PhotoContainer = (props) => {
     const [data, setData] = useState({});
@@ -65,12 +75,14 @@ const PhotoContainer = (props) => {
         setDate(document.querySelector('#datepicker').value)
     }
     return(
-        <section className='photo-container'>
-            <Controls function={prevDate} direction='last' />
-            <Photo src={data.url} title={data.title} />
-            <Controls function={nextDate} direction='next' />
+        <ContainerSection className='photo-container'>
+            <TopSection>
+                <Controls function={prevDate} direction='last' text='<'/>
+                <Photo src={data.url} title={data.title} />
+                <Controls function={nextDate} direction='next' text='>'/>
+            </TopSection>
             <Description date={data.date} desc={data.explanation} hd={data.hdurl} pickerFunction={dateChange} />
-        </section>
+        </ContainerSection>
     )
 }
 
