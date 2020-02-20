@@ -59,12 +59,17 @@ const PhotoContainer = (props) => {
             setDate(formatDate(currentDate));
         }
     }
+    // Function for datepicker 
+    const dateChange = (event) => {
+        event.preventDefault();
+        setDate(document.querySelector('#datepicker').value)
+    }
     return(
         <section className='photo-container'>
             <Controls function={prevDate} direction='last' />
-            <Photo src={data.url} title={data.title}/>
+            <Photo src={data.url} title={data.title} />
             <Controls function={nextDate} direction='next' />
-            <Description date={data.date} desc={data.explanation} hd={data.hdurl} />
+            <Description date={data.date} desc={data.explanation} hd={data.hdurl} pickerFunction={dateChange} />
         </section>
     )
 }
