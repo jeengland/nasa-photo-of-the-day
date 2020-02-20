@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import PhotoContainer from './PhotoContainer/PhotoContainer';
-import Particles from 'react-particles-js';
 
 function App() {
   return (
