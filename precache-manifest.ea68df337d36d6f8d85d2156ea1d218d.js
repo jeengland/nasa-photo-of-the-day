@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d256e3e5c3e47997cfa0cf4d2125ba29",
+    "revision": "fe9378668c3a11854bd067928c8a0986",
     "url": "/nasa-photo-of-the-day/index.html"
   },
   {
-    "revision": "98758be63b40b56095a1",
-    "url": "/nasa-photo-of-the-day/static/css/main.b6d48b67.chunk.css"
+    "revision": "35d38f5ead4ee6c6173c",
+    "url": "/nasa-photo-of-the-day/static/css/main.6bbfc53b.chunk.css"
   },
   {
     "revision": "00741063280c8bed31dd",
     "url": "/nasa-photo-of-the-day/static/js/2.8c4ef92b.chunk.js"
   },
   {
-    "revision": "98758be63b40b56095a1",
+    "revision": "35d38f5ead4ee6c6173c",
     "url": "/nasa-photo-of-the-day/static/js/main.450bd395.chunk.js"
   },
   {
